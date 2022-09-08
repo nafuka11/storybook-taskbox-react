@@ -14,7 +14,6 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
           name="checked"
           id={`archiveTask-${id}`}
           checked={state === "TASK_ARCHIVED"}
-          style={{ background: 'red' }}
         />
         <span
           className="checkbox-custom"
@@ -29,6 +28,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
           readOnly={true}
           name="title"
           placeholder="Input title"
+          style={{ background: 'red' }}
         />
       </label>
 
